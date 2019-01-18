@@ -1,3 +1,6 @@
+//---Mixins
+@import "variables.less";
+
 .home {
 
   .content-section {
@@ -6,16 +9,44 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+
+    @media  @mobile{
+        
+      flex-direction: column;
+
+
+    }
+
+    .welcome-fun-bus{
+      border-bottom: 1px dashed @silver;
+      margin-bottom: 20px;
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
-    }
 
+      @media @mobile{
+        width: auto;
+        padding-top: 30px;
+        padding-left: 20px;
+
+      }
+    }
+  }
+
+  
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @mobile {
+
+        width: auto;
+        height: auto;
+        padding-left: 20px;
+        
+      }
 
       img {
         border-radius: 10px;
@@ -27,14 +58,30 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile{
+      width: auto;
+
+
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+    
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      
+
+          
+      @media @mobile{
+        width: auto;
+        height: auto;
+        padding-left: 20px;
+        order: 1;
+      }
     }
   }
 
@@ -53,9 +100,54 @@
     display: flex;
     justify-content: space-between;
 
+    @media  @mobile{
+        
+      flex-direction: column;
+      align-content: center;
+      padding-left: 20px;
+    }
+  
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      
+    @media  @mobile{
+        
+      flex-direction: column;
+      align-content: center;
+      width: 400px;
+      padding-left: 20px;
     }
+    }
+
   }
-}// home
+// home
+
+
+.content-section .fun-bus-img{
+  border-top: 1px dashed @silver;
+  
+}
+
+.btn{
+  border: 1px solid black;
+  font-size: 15px;
+  border-radius: 40px;
+  height: 40px;
+  padding-left: 75px;
+  padding-top: 12px;
+  background: #17a1b8;
+  color: @white;
+
+
+  @media @mobile {
+    background: @eastern-blue;
+    padding-right: 80px;
+    padding-bottom: 10px;
+    text-align: center;
+    
+    
+  }
+
+}
