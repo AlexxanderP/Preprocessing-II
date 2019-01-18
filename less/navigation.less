@@ -5,14 +5,29 @@ header{
 
     margin-top: 20px;
 
+        
+
+
     
     div{
         display: flex;
         justify-content: space-between;
         max-width: 800px;
         margin: 0 auto;
-    }
 
+        @media @mobile{
+            width: 400px;
+            flex-direction: column;
+            padding-left: 20px; 
+        }
+    
+    fun-header{
+        @media @mobile{
+            width: 400px;
+            flex-direction: column;
+            padding-left: 80px; 
+        }
+    }
     nav {
         display: flex;
         justify-content: space-between;
@@ -28,4 +43,5 @@ header{
             justify-content:  center;
         }
     }
+}
 }

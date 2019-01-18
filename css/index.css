@@ -177,18 +177,32 @@ header div {
   max-width: 800px;
   margin: 0 auto;
 }
-header nav {
+@media (max-width: 500px) {
+  header div {
+    width: 400px;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 500px) {
+  header div fun-header {
+    width: 400px;
+    flex-direction: column;
+    padding-left: 80px;
+  }
+}
+header div nav {
   display: flex;
   justify-content: space-between;
   margin: auto 0;
 }
-header a {
+header div a {
   text-decoration: none;
   color: black;
   margin-left: 50px;
 }
 @media (max-width: 500px) {
-  header a {
+  header div a {
     justify-content: center;
   }
 }
@@ -213,8 +227,11 @@ header a {
   .home .content-section {
     flex-direction: column;
     justify-content: center;
-    padding-left: 30px;
   }
+}
+.home .content-section .welcome-fun-bus {
+  border-bottom: 1px dashed #C0C0C0;
+  margin-bottom: 20px;
 }
 .home .content-section .text-content {
   width: 48%;
@@ -224,11 +241,19 @@ header a {
   .home .content-section .text-content {
     width: 400px;
     padding-top: 30px;
+    padding-left: 20px;
   }
 }
 .home .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .img-content {
+    width: auto;
+    height: auto;
+    padding-left: 20px;
+  }
 }
 .home .img-content img {
   border-radius: 10px;
@@ -244,11 +269,19 @@ header a {
 @media (max-width: 500px) {
   .inverse-content .text-content {
     width: 400px;
+    padding-left: 20px;
   }
 }
 .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width: 500px) {
+  .inverse-content .img-content {
+    width: auto;
+    height: auto;
+    padding-left: 20px;
+  }
 }
 .content-destination {
   width: 75%;
@@ -267,11 +300,20 @@ header a {
   .content-pick {
     flex-direction: column;
     align-content: center;
+    padding-left: 20px;
   }
 }
 .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .content-pick .destination {
+    flex-direction: column;
+    align-content: center;
+    width: 400px;
+    padding-left: 20px;
+  }
 }
 .content-section .fun-bus-img {
   border-top: 1px dashed #C0C0C0;
@@ -290,15 +332,7 @@ header a {
   .btn {
     background: #17A2B8;
     padding-right: 80px;
+    padding-bottom: 10px;
     text-align: center;
-  }
-}
-.welcome-fun-bus {
-  padding-top: 20px;
-  border-bottom: 1px dashed #C0C0C0;
-}
-@media (max-width: 500px) {
-  .welcome-fun-bus {
-    padding-right: 80px;
   }
 }
