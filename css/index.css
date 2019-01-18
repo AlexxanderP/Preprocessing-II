@@ -187,6 +187,11 @@ header a {
   color: black;
   margin-left: 50px;
 }
+@media (max-width: 500px) {
+  header a {
+    justify-content: center;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -204,43 +209,67 @@ header a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .img-content {
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 400px;
+    padding-top: 30px;
+  }
+}
+.home .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
+.home .img-content img {
   border-radius: 10px;
 }
-.home .inverse-content {
+.inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .inverse-content .text-content {
+.inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
+@media (max-width: 500px) {
+  .inverse-content .text-content {
+    width: 400px;
+  }
+}
+.inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
+.content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
+.content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+@media (max-width: 500px) {
+  .content-pick {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+.content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
@@ -260,13 +289,16 @@ header a {
 @media (max-width: 500px) {
   .btn {
     background: #17A2B8;
+    padding-right: 80px;
     text-align: center;
-    padding: auto;
   }
 }
+.welcome-fun-bus {
+  padding-top: 20px;
+  border-bottom: 1px dashed #C0C0C0;
+}
 @media (max-width: 500px) {
-  .container-home {
-    flex-direction: column;
-    align-content: center;
+  .welcome-fun-bus {
+    padding-right: 80px;
   }
 }
