@@ -181,30 +181,23 @@ header div {
   header div {
     width: 400px;
     flex-direction: column;
-    padding-left: 20px;
+    padding-right: 40px;
   }
 }
 @media (max-width: 500px) {
   header div fun-header {
     width: 400px;
-    flex-direction: column;
-    padding-left: 80px;
   }
 }
-header div nav {
+header nav {
   display: flex;
   justify-content: space-between;
   margin: auto 0;
 }
-header div a {
+header a {
   text-decoration: none;
   color: black;
   margin-left: 50px;
-}
-@media (max-width: 500px) {
-  header div a {
-    justify-content: center;
-  }
 }
 .footer {
   width: 100%;
@@ -226,7 +219,6 @@ header div a {
 @media (max-width: 500px) {
   .home .content-section {
     flex-direction: column;
-    justify-content: center;
   }
 }
 .home .content-section .welcome-fun-bus {
@@ -239,7 +231,7 @@ header div a {
 }
 @media (max-width: 500px) {
   .home .content-section .text-content {
-    width: 400px;
+    width: auto;
     padding-top: 30px;
     padding-left: 20px;
   }
@@ -262,15 +254,14 @@ header div a {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .inverse-content {
+    width: auto;
+  }
+}
 .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
-}
-@media (max-width: 500px) {
-  .inverse-content .text-content {
-    width: 400px;
-    padding-left: 20px;
-  }
 }
 .inverse-content .img-content {
   padding-right: 1%;
@@ -281,6 +272,7 @@ header div a {
     width: auto;
     height: auto;
     padding-left: 20px;
+    order: 1;
   }
 }
 .content-destination {

@@ -13,10 +13,10 @@
     @media  @mobile{
         
       flex-direction: column;
-      justify-content: center;
 
 
     }
+
     .welcome-fun-bus{
       border-bottom: 1px dashed @silver;
       margin-bottom: 20px;
@@ -27,7 +27,7 @@
       padding-right: 1%;
 
       @media @mobile{
-        width: 400px;
+        width: auto;
         padding-top: 30px;
         padding-left: 20px;
 
@@ -45,6 +45,7 @@
         width: auto;
         height: auto;
         padding-left: 20px;
+        
       }
 
       img {
@@ -57,26 +58,29 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile{
+      width: auto;
 
+
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
 
-      @media @mobile{
-        width: 400px;
-        padding-left: 20px;
-      }
+    
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      
 
           
       @media @mobile{
         width: auto;
         height: auto;
         padding-left: 20px;
+        order: 1;
       }
     }
   }
